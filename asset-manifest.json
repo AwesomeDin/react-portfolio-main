@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-portfolio-main/static/css/main.c4e62da1.css",
+    "main.js": "/react-portfolio-main/static/js/main.47f0c81f.js",
+    "static/media/recipefy.png": "/react-portfolio-main/static/media/recipefy.8e033e2eab45620b29e9.png",
+    "static/media/PersonalWebsite.png": "/react-portfolio-main/static/media/PersonalWebsite.72315c0e90db8269b8d6.png",
+    "static/media/DSML.png": "/react-portfolio-main/static/media/DSML.c1415a8e944ad3ead1f4.png",
+    "static/media/vz.png": "/react-portfolio-main/static/media/vz.5e2d223bf0b4d7f53314.png",
+    "static/media/headshot.jpg": "/react-portfolio-main/static/media/headshot.fb5f053c490db5533726.jpg",
+    "static/media/rithvikdineshlogo3.png": "/react-portfolio-main/static/media/rithvikdineshlogo3.4450901f7af866ac739c.png",
+    "static/media/woman1.png": "/react-portfolio-main/static/media/woman1.bf207e1501b3e3a89339.png",
+    "static/media/woman2.png": "/react-portfolio-main/static/media/woman2.1badb7321889e9b9ceaf.png",
+    "static/media/man.png": "/react-portfolio-main/static/media/man.58008a565ab6f0db4d93.png",
+    "static/media/Example-Cv.pdf": "/react-portfolio-main/static/media/Example-Cv.e83747cf513e0b21a7f1.pdf",
+    "index.html": "/react-portfolio-main/index.html",
+    "main.c4e62da1.css.map": "/react-portfolio-main/static/css/main.c4e62da1.css.map",
+    "main.47f0c81f.js.map": "/react-portfolio-main/static/js/main.47f0c81f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c4e62da1.css",
+    "static/js/main.47f0c81f.js"
+  ]
+}
