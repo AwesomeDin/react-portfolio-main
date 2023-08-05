@@ -1,145 +1,222 @@
 import React, { useState } from "react";
 import "./qualification.css";
-import { HiOutlineAcademicCap, HiOutlineBriefcase, HiOutlineCalendar } from "react-icons/hi";
+import {
+  HiOutlineAcademicCap,
+  HiOutlineBriefcase,
+  HiOutlineCalendar,
+} from "react-icons/hi";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+import { Chip } from "@mui/material";
+import vz from "./vz.png";
+import infinitesweeps from "./infinitesweepslogo.png";
+import reachforthe from "./reachforthe.png";
 
 const Qualification = () => {
-    const [toggleState, setToggleState] = useState(1)
+  const [toggleState, setToggleState] = useState(1);
 
-    const toggleTab = (index) => {
-        setToggleState(index);
-    };
-  
-    return (
-    <section className="qualification section">
-        <h2 className="section__title">Qualification</h2>
-        <span className="section__subtitle">My Journey</span>
+  const toggleTab = (index) => {
+    setToggleState(index);
+  };
 
-        <div className="qualification__container container">
-            <div className="qualification__tabs">
-                <div className={toggleState === 1 ? "qualification__button button--flex qualification__active" 
-                    : "qualification__button button--flex"} onClick={() => toggleTab(1)}>
-                    <HiOutlineAcademicCap className="qualification__icon" />
-                    Education
-                </div>
-                <div className={toggleState === 2 ? "qualification__button button--flex qualification__active" 
-                    : "qualification__button button--flex"} onClick={() => toggleTab(2)}>
-                    <HiOutlineBriefcase className="qualification__icon" />
-                    Experience
-                </div>
-            </div>
+  return (
+    <section className="qualification section" id="qualification">
+      <h2 className="section__title" style={{ padding: "10px" }}>
+        Timeline
+      </h2>
+      {/* <span className="section__subtitle">My Journey</span> */}
 
-            <div className="qualification__sections">
-                <div className={toggleState === 1 ? "qualification__content qualification__content-active"
-                    : "qualification__content"}>
-                    <div className="qualification__data">
-                        <div>
-                            <h3 className="qualification__title">Design</h3>
-                            <span className="qualification__subtitle">The Art Institute</span>
-                            <div className="qualification__calendar">
-                                <HiOutlineCalendar className="qualification__calendar-icon" />
-                                2016-2018
-                            </div>
-                        </div>
-                        <div>
-                            <span className="qualification__rounder"></span>
-                            <span className="qualification__line"></span>
-                        </div>
-                    </div>
-                    <div className="qualification__data">
-                        <div></div>
-                        <div>
-                            <span className="qualification__rounder"></span>
-                            <span className="qualification__line"></span>
-                        </div>
-                        <div>
-                            <h3 className="qualification__title">Web Development</h3>
-                            <span className="qualification__subtitle">Full Sail University</span>
-                            <div className="qualification__calendar">
-                                <HiOutlineCalendar className="qualification__calendar-icon" />
-                                2018-2021
-                            </div>
-                        </div>
-                    </div>
-                    <div className="qualification__data">
-                        <div>
-                            <h3 className="qualification__title">UI/UX Design</h3>
-                            <span className="qualification__subtitle">UX Academy</span>
-                            <div className="qualification__calendar">
-                                <HiOutlineCalendar className="qualification__calendar-icon" />
-                                2021-2022
-                            </div>
-                        </div>
-                        <div>
-                            <span className="qualification__rounder"></span>
-                            <span className="qualification__line"></span>
-                        </div>
-                    </div>
-                </div>
-                <div className={toggleState === 2 ? "qualification__content qualification__content-active"
-                    : "qualification__content"}>
-                    <div className="qualification__data">
-                        <div>
-                            <h3 className="qualification__title">Tech Support</h3>
-                            <span className="qualification__subtitle">PC Outlet</span>
-                            <div className="qualification__calendar">
-                                <HiOutlineCalendar className="qualification__calendar-icon" />
-                                2012-2015
-                            </div>
-                        </div>
-                        <div>
-                            <span className="qualification__rounder"></span>
-                            <span className="qualification__line"></span>
-                        </div>
-                    </div>
-                    <div className="qualification__data">
-                        <div></div>
-                        <div>
-                            <span className="qualification__rounder"></span>
-                            <span className="qualification__line"></span>
-                        </div>
-                        <div>
-                            <h3 className="qualification__title">Junior Developer</h3>
-                            <span className="qualification__subtitle">Discord</span>
-                            <div className="qualification__calendar">
-                                <HiOutlineCalendar className="qualification__calendar-icon" />
-                                2015-2016
-                            </div>
-                        </div>
-                    </div>
-                    <div className="qualification__data">
-                        <div>
-                            <h3 className="qualification__title">UX Designer</h3>
-                            <span className="qualification__subtitle">Apple Inc</span>
-                            <div className="qualification__calendar">
-                                <HiOutlineCalendar className="qualification__calendar-icon" />
-                                2016-2022
-                            </div>
-                        </div>
-                        <div>
-                            <span className="qualification__rounder"></span>
-                            <span className="qualification__line"></span>
-                        </div>
-                    </div>
-                    <div className="qualification__data">
-                        <div></div>
-                        <div>
-                            <span className="qualification__rounder"></span>
-                            <span className="qualification__line"></span>
-                        </div>
-                        <div>
-                            <h3 className="qualification__title">Senior Developer</h3>
-                            <span className="qualification__subtitle">Freelance - Remote</span>
-                            <div className="qualification__calendar">
-                                <HiOutlineCalendar className="qualification__calendar-icon" />
-                                2019-Present
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div className="qualification__container container">
+        <div id="timeline">
+          <VerticalTimeline lineColor="hidden">
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              contentStyle={{ background: "#b38f00", color: "white" }}
+              contentArrowStyle={{ borderRight: "7px solid  #b38f00" }}
+              iconStyle={{
+                backgroundImage: `url(${reachforthe})`,
+                backgroundSize: "cover",
+              }}
+            >
+              <h3
+                className="vertical-timeline-element-title"
+                style={{
+                  textAlign: "center",
+                  alignSelf: "center",
+                  color: "var(--title-color)",
+                }}
+              >
+                President
+              </h3>
+              <h4
+                className="vertical-timeline-element-subtitle"
+                style={{
+                  textAlign: "center",
+                  alignSelf: "center",
+                }}
+              >
+                Computer Star Foundation
+              </h4>
+              <h5
+                style={{
+                  textAlign: "center",
+                  alignSelf: "center",
+                }}
+              >
+                August 2020 - Present
+              </h5>
+              <p
+                style={{
+                  textAlign: "center",
+                  alignSelf: "center",
+                }}
+              >
+                Conducted numerous camps and events in STEM for youth
+                participants. Instrumental in generating new sponsorships and
+                contributing to workshops.
+              </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              contentStyle={{
+                backgroundColor: "var(--title-color)",
+                color: "white",
+                textAlign: "center",
+              }}
+              contentArrowStyle={{
+                borderRight: "7px solid  var(--title-color)",
+              }}
+              iconStyle={{
+                backgroundImage: `url(${infinitesweeps})`,
+                backgroundSize: "cover",
+              }}
+            >
+              <h3
+                className="vertical-timeline-element-title"
+                style={{
+                  textAlign: "center",
+                  alignSelf: "center",
+                  color: "#b38f00",
+                }}
+              >
+                Testing Intern
+              </h3>
+              <h4
+                className="vertical-timeline-element-subtitle"
+                style={{
+                  textAlign: "center",
+                  alignSelf: "center",
+                }}
+              >
+                Infinite Sweeps
+              </h4>
+              <h5
+                style={{
+                  textAlign: "center",
+                  alignSelf: "center",
+                }}
+              >
+                June 2021-August 2021
+              </h5>
+              <p
+                style={{
+                  textAlign: "center",
+                  alignSelf: "center",
+                  paddingBottom: "3px",
+                }}
+              >
+                • Developed code to validate incoming stock data and perform
+                error/exception handling <br /> • Generated KPI reports and
+                aided in the design of the website to display real-time stock
+                trading data <br /> • Increased platform engagement by 20% based
+                on new designs
+              </p>
+              <Chip
+                label="Java"
+                style={{
+                  backgroundColor: "#b38f00",
+                }}
+              />
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              contentStyle={{
+                background: "#b38f00",
+                color: "white",
+                textAlign: "center",
+              }}
+              contentArrowStyle={{ borderRight: "7px solid  #b38f00" }}
+              iconStyle={{
+                backgroundImage: `url(${vz})`,
+                backgroundSize: "cover",
+              }}
+            >
+              <h3
+                className="vertical-timeline-element-title"
+                style={{
+                  textAlign: "center",
+                  alignSelf: "center",
+                  color: "var(--title-color)",
+                }}
+              >
+                Software Engineer Intern
+              </h3>
+              <h4
+                className="vertical-timeline-element-subtitle"
+                style={{
+                  textAlign: "center",
+                  alignSelf: "center",
+                }}
+              >
+                Verizon
+              </h4>
+              <h5
+                style={{
+                  textAlign: "center",
+                  alignSelf: "center",
+                }}
+              >
+                June 2022-August 2022
+              </h5>
+              <p
+                style={{
+                  textAlign: "center",
+                  alignSelf: "center",
+                  paddingBottom: "3px",
+                }}
+              >
+                • Created an automated testing framework and integrated it with
+                GitLab CI/CD
+                <br /> • Designed different code components to allow
+                SIT/UAT/Regression testing of frontend and backend
+                <br /> • Composed testing configurations and tests for the
+                Verizon ASPN platform <br />• Improved the reliability of
+                functional features with over 542 monthly hours avoided in
+                testing
+              </p>
+              <Chip
+                label="JavaScript"
+                style={{
+                  color: "white",
+                  backgroundColor: "var(--title-color)",
+                }}
+              />
+              <Chip
+                label="Mocha/Chai"
+                style={{
+                  color: "white",
+                  backgroundColor: "var(--title-color)",
+                }}
+              />
+            </VerticalTimelineElement>
+          </VerticalTimeline>
         </div>
-    </section> 
+      </div>
+    </section>
   );
-}
+};
 
 export default Qualification;

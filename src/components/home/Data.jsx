@@ -56,7 +56,7 @@ const Data = () => {
         </svg> */}
       </h1>
       <h3 className="home__subtitle">
-        Computer Science and Business Minor 24'
+        Computer Science B.S. and Business Minor 24'
       </h3>
       {/* <p className="home__description">
         Front-end developer dedicated to design and creative solutions.
