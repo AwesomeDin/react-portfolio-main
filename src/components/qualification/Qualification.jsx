@@ -14,6 +14,7 @@ import { Chip } from "@mui/material";
 import vz from "./vz.png";
 import infinitesweeps from "./infinitesweepslogo.png";
 import reachforthe from "./reachforthe.png";
+import aws from "./aws3.jpg";
 
 const Qualification = () => {
   const [toggleState, setToggleState] = useState(1);
@@ -211,6 +212,58 @@ const Qualification = () => {
                   backgroundColor: "var(--title-color)",
                 }}
               />
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              contentStyle={{
+                backgroundColor: "var(--title-color)",
+                color: "white",
+                textAlign: "center",
+              }}
+              contentArrowStyle={{
+                borderRight: "7px solid  var(--title-color)",
+              }}
+              iconStyle={{
+                backgroundImage: `url(${aws})`,
+                backgroundSize: "contain",
+              }}
+            >
+              <h3
+                className="vertical-timeline-element-title"
+                style={{
+                  textAlign: "center",
+                  alignSelf: "center",
+                  color: "#b38f00",
+                }}
+              >
+                Testing Intern
+              </h3>
+              <h4
+                className="vertical-timeline-element-subtitle"
+                style={{
+                  textAlign: "center",
+                  alignSelf: "center",
+                }}
+              >
+                Amazon Web Services
+              </h4>
+              <h5
+                style={{
+                  textAlign: "center",
+                  alignSelf: "center",
+                }}
+              >
+                May 2023 - August 2023
+              </h5>
+              <p
+                style={{
+                  textAlign: "center",
+                  alignSelf: "center",
+                  paddingBottom: "3px",
+                }}
+              >
+                • More to come
+              </p>
             </VerticalTimelineElement>
           </VerticalTimeline>
         </div>
