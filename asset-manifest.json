@@ -1,23 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.da6fec21.css",
-    "main.js": "/static/js/main.3c4d5e8d.js",
+    "main.css": "/static/css/main.0738aec9.css",
+    "main.js": "/static/js/main.4722a392.js",
     "static/media/recipefy.png": "/static/media/recipefy.8e033e2eab45620b29e9.png",
     "static/media/PersonalWebsite.png": "/static/media/PersonalWebsite.72315c0e90db8269b8d6.png",
     "static/media/DSML.png": "/static/media/DSML.c1415a8e944ad3ead1f4.png",
     "static/media/vz.png": "/static/media/vz.5e2d223bf0b4d7f53314.png",
     "static/media/headshot.jpg": "/static/media/headshot.fb5f053c490db5533726.jpg",
     "static/media/rithvikdineshlogo3.png": "/static/media/rithvikdineshlogo3.4450901f7af866ac739c.png",
-    "static/media/woman1.png": "/static/media/woman1.bf207e1501b3e3a89339.png",
-    "static/media/woman2.png": "/static/media/woman2.1badb7321889e9b9ceaf.png",
-    "static/media/man.png": "/static/media/man.58008a565ab6f0db4d93.png",
-    "static/media/Example-Cv.pdf": "/static/media/Example-Cv.e83747cf513e0b21a7f1.pdf",
+    "static/media/aws3.jpg": "/static/media/aws3.155b618089c644f1b9ef.jpg",
     "index.html": "/index.html",
-    "main.da6fec21.css.map": "/static/css/main.da6fec21.css.map",
-    "main.3c4d5e8d.js.map": "/static/js/main.3c4d5e8d.js.map"
+    "main.0738aec9.css.map": "/static/css/main.0738aec9.css.map",
+    "main.4722a392.js.map": "/static/js/main.4722a392.js.map"
   },
   "entrypoints": [
-    "static/css/main.da6fec21.css",
-    "static/js/main.3c4d5e8d.js"
+    "static/css/main.0738aec9.css",
+    "static/js/main.4722a392.js"
   ]
 }
